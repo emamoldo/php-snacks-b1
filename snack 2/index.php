@@ -1,8 +1,25 @@
 <?php
 // name length > 3 characters
-// mail .@
-// age = number
+$name = $_GET["name"];
+var_dump($name);
+var_dump(strlen($name));
 
+// mail .@
+$mail = $_GET["email"];
+var_dump($mail);
+
+// age = number
+$age = $_GET["age"];
+var_dump($age);
+
+
+// if (strlen($name) > 3) {
+//     echo "Accesso Riuscito";
+// }
+
+if (str_contains($mail, '.@')) {
+    echo "Accesso Riuscito";
+}
 
 ?>
 
